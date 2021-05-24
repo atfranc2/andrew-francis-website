@@ -1,7 +1,10 @@
 :root {
   --color-body: lightgray;
   --color-heading: black;
+  --color-accent: red;
 }
+
+/* Topography */
 
 html {
   font-size: 62.5%;
@@ -52,5 +55,34 @@ p {
 
   h3 {
     font-size: 2rem;
+  }
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+  transition: margin 0.25s;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
