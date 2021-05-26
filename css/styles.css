@@ -5,6 +5,8 @@
   --color-primary: blue;
   --color-secondary: cyan;
   --color-accent: red;
+
+  --linkedin-blue: #0a66c2;
 }
 
 /* Topography */
@@ -140,7 +142,7 @@ a {
 }
 
 .list--tick {
-  list-style-image: url(../images/tick.svg);
+  list-style-image: url(../images/bullseye.svg);
   padding-left: 2rem;
 }
 
@@ -153,4 +155,25 @@ a {
   .list--tick .list__item {
     padding-left: 0;
   }
+}
+
+/* icons */
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+.icon--black {
+  fill: none;
+  stroke: black;
+}
+
+.icon-container {
+  background-color: #f3f9fa;
+  height: 64px;
+  width: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
