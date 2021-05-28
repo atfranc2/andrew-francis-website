@@ -2,11 +2,21 @@
   --color-body: lightgray;
   --color-heading: black;
 
-  --color-primary: blue;
-  --color-secondary: cyan;
-  --color-accent: red;
+  --color-primary: #002060;
+
+  --color-secondary: #00e01a;
+  --dimmed-secondary: #00c216;
+
+  --color-accent: #ff0000;
+  --dimmed-accent: #fc4e4e;
 
   --linkedin-blue: #0a66c2;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 /* Topography */
@@ -176,4 +186,77 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Buttons */
+
+.btn-container {
+  width: 100%;
+}
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+.btn--primary {
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background-color: #fff;
+  color: var(--color-primary);
+}
+
+.btn--secondary {
+  border: 2px solid var(--color-secondary);
+  background-color: var(--color-secondary);
+  color: white;
+  text-transform: uppercase;
+}
+
+.btn--secondary:hover {
+  background-color: var(--dimmed-secondary);
+  border-color: var(--dimmed-secondary);
+}
+
+.btn--outline {
+  border: 2px solid var(--color-primary);
+  background-color: white;
+  color: var(--color-primary);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.btn--accent:hover {
+  background-color: var(--dimmed-accent);
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
