@@ -14,6 +14,8 @@
 
   --color-border: #ccc;
   --border-radius: 30px;
+
+  --card_radius: 15px;
 }
 
 *,
@@ -313,3 +315,35 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Cards */
+
+.card {
+  border-radius: var(--card_radius);
+  box-shadow: 0 0 20px 2px lightgray;
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 15px 35px;
+}
+
+.card--primary .card__header {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.card--secondary .card__header {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Plans */
