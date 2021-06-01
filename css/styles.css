@@ -11,6 +11,9 @@
   --dimmed-accent: #fc4e4e;
 
   --linkedin-blue: #0a66c2;
+
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 
 *,
@@ -251,12 +254,62 @@ a {
   color: white;
 }
 
+.btn--search::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f002";
+  padding-right: 10px;
+}
+
 .btn--accent:hover {
   background-color: var(--dimmed-accent);
 }
 
 @media screen and (min-width: 1024px) {
   .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* Inputs */
+
+.input {
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--color-border);
+  box-shadow: 0 0 15px 1px lightgray;
+  color: var(--color-heading);
+  font-size: 2rem;
+  outline: none;
+  padding: 1.5rem;
+}
+
+.input--group {
+  align-items: center;
+  border-radius: 50px;
+  border: 1.5px solid var(--color-border);
+  box-shadow: 0 0 15px 1px lightgray;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.input--group .input {
+  border: 0;
+  box-shadow: none;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+
+.input--group .btn {
+  margin: 4px;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
     font-size: 1.5rem;
   }
 }
