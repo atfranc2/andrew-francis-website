@@ -339,6 +339,10 @@ a {
   color: #fff;
 }
 
+.card--secondary .badge--secondary {
+  background: var(--color-primary);
+}
+
 .card__body {
   display: flex;
   flex-direction: column;
@@ -346,4 +350,141 @@ a {
   height: 100%;
 }
 
-/* Plans */
+/* Project */
+
+.project--popular .card__header::before {
+  content: url(/images/popular.svg);
+  display: inline-block;
+  position: absolute;
+  width: 40px;
+  top: -6px;
+  right: 10%;
+}
+
+.project--popular .card__header {
+  position: relative;
+}
+
+.project--primary {
+  color: black;
+}
+
+.project__name {
+  font-size: 3rem;
+  color: white;
+  margin: 1rem 0;
+}
+
+.project__cost {
+  display: inline-block;
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+.project__timeframe {
+  opacity: 0.8;
+}
+
+.project__footer {
+  margin: 1rem 0;
+  letter-spacing: 2px;
+}
+
+.project__popular {
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 80%;
+  z-index: 999;
+}
+
+/* Badges */
+
+.badge {
+  padding: 5px 10px;
+  margin: 0 1rem;
+}
+
+.badge--primary {
+  padding: 5px 10px;
+  margin: 0 1rem;
+}
+
+/* Menu */
+
+.action--menu--container {
+  width: fit-content;
+  position: relative;
+}
+
+.action--menu {
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.action--menu__icon {
+  color: black;
+  display: inline-block;
+  padding: 8px 14px;
+}
+
+.action--menu--active {
+  background-color: #d9d9d9;
+  transform: rotate(90deg);
+}
+
+.action--menu:hover {
+  background-color: #d9d9d9;
+}
+
+.action--list {
+  color: black;
+  list-style: none;
+  padding: 0;
+  margin: 0 1.5rem;
+  background-color: white;
+  width: fit-content;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  position: absolute;
+  top: 1.5rem;
+}
+
+.action--list__item {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+
+.action--list__item:hover {
+  background-color: lightgray;
+}
+
+.action--list :not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}
+
+.js-edit::before {
+  font-family: FontAwesome;
+  content: "\f044"; /* FontAwesome Unicode */
+  padding-right: 2rem;
+}
+
+.js-delete::before {
+  font-family: FontAwesome;
+  content: "\f2ed"; /* FontAwesome Unicode */
+  padding-right: 2rem;
+}
+
+.js-copy::before {
+  font-family: FontAwesome;
+  content: "\f0c5"; /* FontAwesome Unicode */
+  padding-right: 2rem;
+}
+
+.hidden {
+  display: none;
+}
