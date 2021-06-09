@@ -410,6 +410,32 @@ a {
   margin: 0 1rem;
 }
 
+/* Media */
+
+.media {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.media__body {
+  margin-left: 2rem;
+}
+
+.media__title {
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.media_description {
+  color: black;
+}
+
+.media__image {
+  font-size: 9rem;
+  color: lightgreen;
+}
+
 /* Menu */
 
 .action--menu--container {
