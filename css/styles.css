@@ -1,5 +1,6 @@
 :root {
   --color-body: lightgray;
+  --color-body-darker: #5c5577;
   --color-heading: black;
 
   --color-primary: #002060;
@@ -176,6 +177,11 @@ a {
 .icon {
   height: 40px;
   width: 40px;
+}
+
+.icon--primary {
+  stroke: var(--color-primary);
+  fill: var(--color-primary);
 }
 
 .icon--black {
@@ -431,9 +437,53 @@ a {
   color: black;
 }
 
-.media__image {
-  font-size: 9rem;
+.media__icon {
+  margin-top: 1rem;
+  font-size: 4rem;
   color: lightgreen;
+}
+
+.media__image {
+  margin-top: 1rem;
+}
+
+/* Quote */
+
+.quote {
+  font-style: italic;
+  font-size: 3rem;
+  color: var(--color-body-darker);
+  line-height: 1.3;
+}
+
+.quote__text::before {
+  content: open-quote;
+}
+
+.quote__text::after {
+  content: close-quote;
+}
+
+.quote__signature {
+  font-style: normal;
+  margin-top: 3rem;
+}
+
+.quote__media-image {
+  position: relative;
+  bottom: 10px;
+}
+
+.quote__author {
+  color: var(--color-primary);
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.quote__organization {
+  color: var(--color-heading);
+  font-size: 2rem;
+  opacity: 0.4;
 }
 
 /* Menu */
