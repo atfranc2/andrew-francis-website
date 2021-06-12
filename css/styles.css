@@ -601,6 +601,56 @@ a {
   }
 }
 
+/* Collapsibles */
+
+.collapsible .list__item {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.collapsible__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsible__title {
+  font-size: 3rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.collapsible__icon {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__header:hover {
+  cursor: pointer;
+}
+
+.collapsible--expanded {
+  transform: rotate(0);
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__icon {
+  transform: rotate(0);
+  transition: transform 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
 /* Menu */
 
 .action--menu--container {
