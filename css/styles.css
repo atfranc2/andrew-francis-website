@@ -36,7 +36,7 @@ body {
   font-size: 2.4rem;
   color: var(--color-body);
   line-height: 1.5;
-  margin: 2rem;
+  margin: 2rem 0;
 }
 
 h1,
@@ -78,6 +78,13 @@ p {
   h3 {
     font-size: 2rem;
   }
+}
+
+/* Contianer */
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
 }
 
 /* Links */
@@ -651,6 +658,41 @@ a {
   opacity: 1;
 }
 
+/* Block */
+
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.block--skewed-left {
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.block--skewed-right {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.block--dark {
+  background-color: black;
+  color: white;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block__heading {
+  margin: 0;
+}
+
+.block--dark .block__heading {
+  color: white;
+}
 /* Menu */
 
 .action--menu--container {
