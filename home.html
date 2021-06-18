@@ -23,7 +23,25 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div style="width: 100%"></div>
+    <div style="width: 100%">
+      <nav id="test" class="nav nav--dark collapsible">
+        <a href="/home.html">
+          <img class="nav__icon" src="/images/af-icon.svg" alt="" />
+        </a>
+        <span class="icon-container">
+          <svg class="icon icon--white nav__hamburger collapsible__toggler">
+            <use xlink:href="images/media-sprite.svg#menu"></use>
+          </svg>
+        </span>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Item 1</a></li>
+          <li class="nav__item"><a href="#">Item 2</a></li>
+          <li class="nav__item"><a href="#">Item 3</a></li>
+          <li class="nav__item"><a href="#">Item 4</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div></div>
   </body>
   <script src="/Javascript/action-menu.js"></script>
   <script src="/Javascript/collapsible.js"></script>
