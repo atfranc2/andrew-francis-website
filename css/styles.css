@@ -520,6 +520,11 @@ a {
   display: grid;
 }
 
+.grid--2x1 {
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+}
+
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
@@ -773,6 +778,33 @@ a {
   .nav__hamburger {
     display: none;
   }
+}
+
+/* Profession */
+
+.profession {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.profession__name {
+  color: white;
+  font-size: 8rem;
+}
+
+.profession__skills {
+  color: white;
+  font-size: 4rem;
+}
+
+.profession__divider {
+  height: 2px;
+  width: 75%;
+  min-width: 650px;
+  background-color: white;
 }
 
 /* Menu */
