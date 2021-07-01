@@ -23,9 +23,404 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div style="width: 100%"></div>
+    <nav id="test" class="nav nav--primary collapsible">
+      <a href="/home.html">
+        <img class="nav__icon" src="/images/af-icon.svg" alt="" />
+      </a>
+      <span class="icon-container">
+        <svg class="icon icon--white nav__hamburger collapsible__toggler">
+          <use xlink:href="images/media-sprite.svg#menu"></use>
+        </svg>
+      </span>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Item 1</a></li>
+        <li class="nav__item"><a href="#">Item 2</a></li>
+        <li class="nav__item"><a href="#">Item 3</a></li>
+        <li class="nav__item"><a href="#">Item 4</a></li>
+      </ul>
+    </nav>
+    <section class="hero block block--primary block--skewed-left">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Andrew Francis</h1>
+          <hr />
+          <span class="hero__skill">Developer &#8226;</span>
+          <span class="hero__skill">Engineer &#8226;</span>
+          <span class="hero__skill">Scientist</span>
+        </header>
+        <picture>
+          <source type="image/webp" srcset="images/proff_headshot.webp" />
+          <source type="image/png" srcset="images/proff_head_shot.png" />
+          <img class="hero__image" src="/images/proff_headshot.webp" alt="" />
+        </picture>
+      </div>
+    </section>
+    <section class="block block-domain container">
+      <header class="block__header">
+        <h2 class="block__heading">
+          The best developer for the best price starts here
+        </h2>
+        <p class="block__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus
+          provident consequuntur omnis accusantium dolore sequi?
+        </p>
+      </header>
+      <div class="input--group">
+        <input
+          class="input"
+          type="text"
+          placeholder="Enter domain name here..."
+        />
+        <button class="btn btn--accent btn--search">Search</button>
+      </div>
+      <ul class="list block-domain__prices">
+        <li>20% Off</li>
+        <li>20% Off</li>
+        <li><span class="badge badge--primary">20% Off</span></li>
+        <li>20% Off</li>
+        <li>20% Off</li>
+        <li>20% Off</li>
+      </ul>
+    </section>
+    <section class="block block-plans container">
+      <div class="grid grid--1x3">
+        <div class="project">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="project__name">Project Name</h3>
+              <span class="project__cost">$14,000</span>
+              <span class="project__timeframe">/month</span>
+              <span class="badge badge--secondary">20% Done</span>
+              <p class="project__footer">It was a fun project</p>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="project project--popular">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="project__name">Project Name</h3>
+              <span class="project__cost">$14,000</span>
+              <span class="project__timeframe">/month</span>
+              <span class="badge badge--secondary">20% Done</span>
+              <p class="project__footer">It was a fun project</p>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="project__name">Project Name</h3>
+              <span class="project__cost">$14,000</span>
+              <span class="project__timeframe">/month</span>
+              <span class="badge badge--secondary">20% Done</span>
+              <p class="project__footer">It was a fun project</p>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="block-feature__heading">Learn More About Me</h2>
+        <p class="block-feature__description">
+          I work on a lot of fun project that I like to share to help others
+          learn and get inspired. Below are some places you can go to learn more
+          about me.
+        </p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <span class="icon-container icon-container--primary">
+            <svg class="icon">
+              <use xlink:href="images/media-sprite.svg#computer"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Learn About This Website</h3>
+          <p class="feature__text">
+            I built and styled this website from scratch to enhance my
+            development skills. This website also serves as a platform that I
+            can use to showcase future projects. Learn more about the tools and
+            skills that I used to build this website.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="images/website-plan.webp" />
+          <source type="image/png" srcset="images/website-plan.png" />
+          <img class="feature__image" src="/images/website-plan.webp" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <div class="feature__icon">
+            <span class="icon-container icon-container--primary">
+              <svg class="icon icon--linkedin-blue">
+                <use xlink:href="images/sprite.svg#linkedin-icon"></use>
+              </svg>
+            </span>
+          </div>
+          <h3 class="feature__heading">Look At My LinkedIn</h3>
+          <p class="feature__text">
+            I have a diverse background and set of experiences that make me a
+            unique professional. I have a bachelors of science in Enviromental
+            Engineering and a masters of science in Data Science. I am currently
+            working as a Software Engieer in the insurance indistry. Check out
+            my Github to lern more about my professional experiences.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/andrew-francis-474366a8/"
+            target="blank"
+            class="link-arrow"
+            >Look At My Professional Experience</a
+          >
+        </div>
+        <picture>
+          <source type="image/webp" srcset="images/Linkedin.webp" />
+          <source type="image/png" srcset="images/Linkedin.png" />
+          <img class="feature__image" src="/images/Linkedin.webp" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <div class="feature__icon">
+            <span class="icon-container icon-container--primary">
+              <svg class="icon">
+                <use xlink:href="images/sprite.svg#github-icon"></use>
+              </svg>
+            </span>
+          </div>
+          <h3 class="feature__heading">Check Out My Github</h3>
+          <p class="feature__text">
+            As this website shows, I like to take on projects in my free time
+            just for the fun of it and to build my skills. I use Github as a
+            repository for all of my code. So, if you are interested in digging
+            into the code behind my projects, head over to Github and check them
+            out!
+          </p>
+          <a
+            href="https://github.com/atfranc2"
+            target="blank"
+            class="link-arrow"
+            >Check my code</a
+          >
+        </div>
+        <picture>
+          <source type="image/webp" srcset="images/github.webp" />
+          <source type="image/png" srcset="images/github.png" />
+          <img class="feature__image" src="/images/github.png" alt="" />
+        </picture>
+      </article>
+    </section>
+    <section class="block block--dark block--skewed-left block-showcase">
+      <header class="block__header block-showcase__heading">
+        <h2 class="block__heading">Look at this really cool project!</h2>
+      </header>
+      <div class="container grid grid--1x2">
+        <picture class="block-showcase__image">
+          <source
+            type="image/webp"
+            srcset="/images/data_has_a_better_idea.webp"
+          />
+          <source
+            type="image/png"
+            srcset="/images/data_has_a_better_idea.png"
+          />
+          <img src="/images/data_has_a_better_idea.webp" alt="" />
+        </picture>
+        <ul class="list">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--secondary">
+                  <use xlink:href="images/media-sprite.svg#snap"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Easy Start & Updates</h3>
+                <p class="media_description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam ipsum tempora culpa esse? Repellat, ab iusto. Hic dicta
+                  aspernatur iure.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--secondary">
+                  <use xlink:href="images/media-sprite.svg#snap"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Easy Start & Updates</h3>
+                <p class="media_description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam ipsum tempora culpa esse? Repellat, ab iusto. Hic dicta
+                  aspernatur iure.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--secondary">
+                  <use xlink:href="images/media-sprite.svg#snap"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Easy Start & Updates</h3>
+                <p class="media_description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam ipsum tempora culpa esse? Repellat, ab iusto. Hic dicta
+                  aspernatur iure.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="block-showcase__medias"></div>
+      </div>
+    </section>
+    <section class="card card--secondary container testimonial">
+      <div class="card__body ">
+        <div class="grid grid--1x2">
+          <div class="testimonial__image">            
+              <img
+              src="/images/juan.png"
+              alt="Picture of a man in front of a company sign"
+              />
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--small icon--white">
+                  <use xlink:href="images/media-sprite.svg#quotes"></use>
+                </svg>
+              </span>
+          </div>
+          <blockquote class="quote"">
+            <p class="quote__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+              impedit at non quidem sint ab magni quasi tempore laboriosam nemo
+              aspernatur cupiditate eveniet ipsa, est quibusdam libero odio
+              laudantium enim aliquam. Deleniti, delectus enim ipsa corrupti labore
+              fugit dolore natus excepturi quos deserunt iusto ullam reprehenderit
+              esse culpa assumenda quam!
+            </p>
+            <footer class="quote__signature">        
+              <div class="media">
+                <div class="media__image quote__media-image">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="/images/media-sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Juan Verardo</h3>
+                  <p class="media_description quote__organization">
+                    Biowish Technologies, Director of Commercial Water Treatment
+                  </p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
   </body>
-
+  <footer class="block footer footer--primary">
+    <div class="container footer__sections">
+      <section class="collapsible footer__section">
+        <header class="collapsible__header collapsible__toggler">
+          <h2 class="collapsible__title footer__title">Products</h2>
+          <svg class="icon icon--white collapsible__icon">
+            <use xlink:href="images/media-sprite.svg#chevron"></use>
+          </svg>
+        </header>
+        <div class="collapsible__content">
+          <ul class="list">
+            <li class="footer__item"><a href="#">Website Hosting</a></li>
+            <li class="footer__item"><a href="#">Free Automated</a></li>
+            <li class="footer__item"><a href="#">Wordpress</a></li>
+            <li class="footer__item"><a href="#">Migrations</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="collapsible footer__section">
+        <header class="collapsible__header collapsible__toggler">
+          <h2 class="collapsible__title footer__title">Company</h2>
+          <svg class="icon icon--white collapsible__icon">
+            <use xlink:href="images/media-sprite.svg#chevron"></use>
+          </svg>
+        </header>
+        <div class="collapsible__content">
+          <ul class="list">
+            <li class="footer__item"><a href="#">About</a></li>
+            <li class="footer__item"><a href="#">Affiliates</a></li>
+            <li class="footer__item"><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="collapsible footer__section">
+        <header class="collapsible__header collapsible__toggler">
+          <h2 class="collapsible__title footer__title">Support</h2>
+          <svg class="icon icon--white collapsible__icon">
+            <use xlink:href="images/media-sprite.svg#chevron"></use>
+          </svg>
+        </header>
+        <div class="collapsible__content">
+          <ul class="list">
+            <li class="footer__item"><a href="#">Contact</a></li>
+            <li class="footer__item"><a href="#">Knowledge Base</a></li>
+            <li class="footer__item"><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="collapsible footer__section">
+        <header class="collapsible__header collapsible__toggler">
+          <h2 class="collapsible__title footer__title">Domains</h2>
+          <svg class="icon icon--white collapsible__icon">
+            <use xlink:href="images/media-sprite.svg#chevron"></use>
+          </svg>
+        </header>
+        <div class="collapsible__content">
+          <ul class="list">
+            <li class="footer__item"><a href="#">Domain Checker</a></li>
+            <li class="footer__item"><a href="#">Domain Transfer</a></li>
+            <li class="footer__item"><a href="#">Free Domain</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer__attribution">
+        <svg class="icon icon--white footer__icon">
+          <use xlink:href="images/sprite.svg#af-icon"></use>
+        </svg>
+        <p class="footer__copyright">Copyright 2021 Andrew Francis</p>
+      </section>
+    </div>
+  </footer>
   <script src="/Javascript/action-menu.js"></script>
   <script src="/Javascript/collapsible.js"></script>
 </html>

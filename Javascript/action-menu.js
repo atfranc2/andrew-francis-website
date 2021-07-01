@@ -6,7 +6,6 @@ $(document).ready(function(){
         if(!isActive){
             $(this).addClass("action--menu--active"); 
             actionList.show(200); 
-            console.log($(this).prop("z-index"))
         }
         else{
             $(this).removeClass("action--menu--active"); 

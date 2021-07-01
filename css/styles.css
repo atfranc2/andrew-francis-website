@@ -553,6 +553,11 @@ a {
 
 /* Testimonials */
 
+.testimonial {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .testimonial__image {
   position: relative;
 }
@@ -729,6 +734,10 @@ a {
 
 .nav--dark {
   background-color: #000;
+}
+
+.nav--primary {
+  background-color: var(--color-primary);
 }
 
 .nav__icon {
@@ -957,6 +966,10 @@ a {
 
 /* Showcase */
 
+.block-showcase {
+  margin: 4rem 0;
+}
+
 .block-showcase__heading {
   margin-bottom: 5rem;
 }
@@ -1004,7 +1017,15 @@ a {
   background-color: black;
 }
 
+.footer--primary {
+  background-color: var(--color-primary);
+}
+
 .footer--dark * {
+  color: white;
+}
+
+.footer--primary * {
   color: white;
 }
 
