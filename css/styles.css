@@ -80,6 +80,11 @@ p {
   }
 }
 
+.line-break {
+  display: block;
+  margin: 1rem;
+}
+
 /* Contianer */
 
 .container {
@@ -344,6 +349,7 @@ a {
   flex-grow: 1;
   padding: 1.5rem 2.5rem;
   overflow: hidden;
+  width: 0;
 }
 
 .input--group .btn {
@@ -556,6 +562,8 @@ a {
 .testimonial {
   margin-top: 4rem;
   margin-bottom: 4rem;
+  margin-left: min(auto, 2rem);
+  margin-right: min(auto, 2rem);
 }
 
 .testimonial__image {
@@ -741,7 +749,7 @@ a {
 }
 
 .nav__icon {
-  width: 80px;
+  width: 90px;
   margin: 1rem;
 }
 
@@ -845,11 +853,14 @@ a {
 /* Hero */
 
 .hero__image {
+  margin: auto;
+}
+
+.hero__image > img {
+  width: 100%;
+  max-width: 300px;
   border: 5px solid var(--color-secondary);
   border-radius: 50%;
-  width: 90%;
-  max-width: 400px;
-  margin: auto;
   box-shadow: 11px 14px 25px rgba(0, 0, 0, 0.6);
 }
 

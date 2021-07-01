@@ -23,22 +23,24 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav id="test" class="nav nav--primary collapsible">
-      <a href="home.html">
-        <img class="nav__icon" src="images/af-icon.svg" alt="" />
-      </a>
-      <span class="icon-container">
-        <svg class="icon icon--white nav__hamburger collapsible__toggler">
-          <use xlink:href="images/media-sprite.svg#menu"></use>
-        </svg>
-      </span>
-      <ul class="list nav__list collapsible__content">
-        <li class="nav__item"><a href="#">Item 1</a></li>
-        <li class="nav__item"><a href="#">Item 2</a></li>
-        <li class="nav__item"><a href="#">Item 3</a></li>
-        <li class="nav__item"><a href="#">Item 4</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav id="test" class="nav nav--primary collapsible">
+        <a href="home.html">
+          <img class="nav__icon" src="images/af-icon.svg" alt="" />
+        </a>
+        <span class="icon-container">
+          <svg class="icon icon--white nav__hamburger collapsible__toggler">
+            <use xlink:href="images/media-sprite.svg#menu"></use>
+          </svg>
+        </span>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Item 1</a></li>
+          <li class="nav__item"><a href="#">Item 2</a></li>
+          <li class="nav__item"><a href="#">Item 3</a></li>
+          <li class="nav__item"><a href="#">Item 4</a></li>
+        </ul>
+      </nav>
+    </header>
     <section class="hero block block--primary block--skewed-left">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
@@ -48,10 +50,10 @@
           <span class="hero__skill">Engineer &#8226;</span>
           <span class="hero__skill">Scientist</span>
         </header>
-        <picture>
+        <picture class="hero__image">
           <source type="image/webp" srcset="images/proff_headshot.webp" />
           <source type="image/png" srcset="images/proff_head_shot.png" />
-          <img class="hero__image" src="images/proff_headshot.webp" alt="" />
+          <img src="images/proff_headshot.webp" alt="" />
         </picture>
       </div>
     </section>
@@ -323,12 +325,12 @@
           </div>
           <blockquote class="quote"">
             <p class="quote__text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
-              impedit at non quidem sint ab magni quasi tempore laboriosam nemo
-              aspernatur cupiditate eveniet ipsa, est quibusdam libero odio
-              laudantium enim aliquam. Deleniti, delectus enim ipsa corrupti labore
-              fugit dolore natus excepturi quos deserunt iusto ullam reprehenderit
-              esse culpa assumenda quam!
+              Andrews work exceeded expectations from day one. Not only did he show great capacity to work independently and 
+              effectively to tackle diverse challenges. He also provided solutions which added value across multiple business units. 
+              <span class="line-break"></span>
+              His work using data visualization software to better illustrate market models across water, animal feed and agronomy are great examples of this. I don’t think any segment manager will be content with two pie charts and a bar graph in our commercial presentations ever again.
+              <span class="line-break"></span>
+              BiOWiSH will always have room for someone with his ingenuity and commitment towards work.
             </p>
             <footer class="quote__signature">        
               <div class="media">
@@ -349,78 +351,78 @@
         </div>
       </div>
     </section>
+    <footer class="block footer footer--primary">
+      <div class="container footer__sections">
+        <section class="collapsible footer__section">
+          <header class="collapsible__header collapsible__toggler">
+            <h2 class="collapsible__title footer__title">Products</h2>
+            <svg class="icon icon--white collapsible__icon">
+              <use xlink:href="images/media-sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li class="footer__item"><a href="#">Website Hosting</a></li>
+              <li class="footer__item"><a href="#">Free Automated</a></li>
+              <li class="footer__item"><a href="#">Wordpress</a></li>
+              <li class="footer__item"><a href="#">Migrations</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header collapsible__toggler">
+            <h2 class="collapsible__title footer__title">Company</h2>
+            <svg class="icon icon--white collapsible__icon">
+              <use xlink:href="images/media-sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li class="footer__item"><a href="#">About</a></li>
+              <li class="footer__item"><a href="#">Affiliates</a></li>
+              <li class="footer__item"><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header collapsible__toggler">
+            <h2 class="collapsible__title footer__title">Support</h2>
+            <svg class="icon icon--white collapsible__icon">
+              <use xlink:href="images/media-sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li class="footer__item"><a href="#">Contact</a></li>
+              <li class="footer__item"><a href="#">Knowledge Base</a></li>
+              <li class="footer__item"><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header collapsible__toggler">
+            <h2 class="collapsible__title footer__title">Domains</h2>
+            <svg class="icon icon--white collapsible__icon">
+              <use xlink:href="images/media-sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li class="footer__item"><a href="#">Domain Checker</a></li>
+              <li class="footer__item"><a href="#">Domain Transfer</a></li>
+              <li class="footer__item"><a href="#">Free Domain</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__attribution">
+          <svg class="icon icon--white footer__icon">
+            <use xlink:href="images/sprite.svg#af-icon"></use>
+          </svg>
+          <p class="footer__copyright">Copyright 2021 Andrew Francis</p>
+        </section>
+      </div>
+    </footer>
   </body>
-  <footer class="block footer footer--primary">
-    <div class="container footer__sections">
-      <section class="collapsible footer__section">
-        <header class="collapsible__header collapsible__toggler">
-          <h2 class="collapsible__title footer__title">Products</h2>
-          <svg class="icon icon--white collapsible__icon">
-            <use xlink:href="images/media-sprite.svg#chevron"></use>
-          </svg>
-        </header>
-        <div class="collapsible__content">
-          <ul class="list">
-            <li class="footer__item"><a href="#">Website Hosting</a></li>
-            <li class="footer__item"><a href="#">Free Automated</a></li>
-            <li class="footer__item"><a href="#">Wordpress</a></li>
-            <li class="footer__item"><a href="#">Migrations</a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="collapsible footer__section">
-        <header class="collapsible__header collapsible__toggler">
-          <h2 class="collapsible__title footer__title">Company</h2>
-          <svg class="icon icon--white collapsible__icon">
-            <use xlink:href="images/media-sprite.svg#chevron"></use>
-          </svg>
-        </header>
-        <div class="collapsible__content">
-          <ul class="list">
-            <li class="footer__item"><a href="#">About</a></li>
-            <li class="footer__item"><a href="#">Affiliates</a></li>
-            <li class="footer__item"><a href="#">Blog</a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="collapsible footer__section">
-        <header class="collapsible__header collapsible__toggler">
-          <h2 class="collapsible__title footer__title">Support</h2>
-          <svg class="icon icon--white collapsible__icon">
-            <use xlink:href="images/media-sprite.svg#chevron"></use>
-          </svg>
-        </header>
-        <div class="collapsible__content">
-          <ul class="list">
-            <li class="footer__item"><a href="#">Contact</a></li>
-            <li class="footer__item"><a href="#">Knowledge Base</a></li>
-            <li class="footer__item"><a href="#">FAQ</a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="collapsible footer__section">
-        <header class="collapsible__header collapsible__toggler">
-          <h2 class="collapsible__title footer__title">Domains</h2>
-          <svg class="icon icon--white collapsible__icon">
-            <use xlink:href="images/media-sprite.svg#chevron"></use>
-          </svg>
-        </header>
-        <div class="collapsible__content">
-          <ul class="list">
-            <li class="footer__item"><a href="#">Domain Checker</a></li>
-            <li class="footer__item"><a href="#">Domain Transfer</a></li>
-            <li class="footer__item"><a href="#">Free Domain</a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="footer__attribution">
-        <svg class="icon icon--white footer__icon">
-          <use xlink:href="images/sprite.svg#af-icon"></use>
-        </svg>
-        <p class="footer__copyright">Copyright 2021 Andrew Francis</p>
-      </section>
-    </div>
-  </footer>
   <script src="/Javascript/action-menu.js"></script>
   <script src="/Javascript/collapsible.js"></script>
 </html>
