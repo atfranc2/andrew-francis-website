@@ -402,7 +402,7 @@ a {
 /* Project */
 
 .project--popular .card__header::before {
-  content: url(images/popular.svg);
+  content: url(../images/popular.svg);
   display: inline-block;
   position: absolute;
   width: 40px;
