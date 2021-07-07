@@ -1110,6 +1110,43 @@ a {
   }
 }
 
+/* Article */
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+}
+
+.article--container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.article__title {
+  text-align: center;
+}
+
+.article__image {
+  max-width: 100%;
+}
+
+.article__figure {
+  margin: 2rem;
+}
+
+.article__text {
+  margin: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .article__figure {
+    float: left;
+    max-width: 50%;
+  }
+}
+
 /* Menu */
 
 .action--menu--container {
