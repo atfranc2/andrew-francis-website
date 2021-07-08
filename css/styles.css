@@ -1113,19 +1113,22 @@ a {
 /* Article */
 
 .article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   color: black;
 }
 
 .article--container {
   max-width: 950px;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 .article__title {
   text-align: center;
+  margin: 1rem;
+}
+
+.article__subtitle {
+  margin: 2rem;
+  font-size: 2.5rem;
 }
 
 .article__image {
@@ -1133,17 +1136,26 @@ a {
 }
 
 .article__figure {
-  margin: 2rem;
+  margin: 5rem 2rem;
+}
+
+.article__image-annotation {
+  opacity: 0.7;
 }
 
 .article__text {
   margin: 2rem;
 }
 
+.clear {
+  clear: both;
+}
+
 @media screen and (min-width: 768px) {
   .article__figure {
     float: left;
     max-width: 50%;
+    margin: 2rem 2rem;
   }
 }
 
