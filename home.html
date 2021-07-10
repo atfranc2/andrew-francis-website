@@ -79,14 +79,23 @@
           provident consequuntur omnis accusantium dolore sequi?
         </p>
       </header>
-      <div class="input--group">
+      <form
+        class="input--group"
+        id="site-search-form"
+        action="search.html"
+        method="get"
+      >
         <input
+          aria-label="search"
           class="input"
           type="text"
-          placeholder="Enter domain name here..."
+          name="SiteSearchValue"
+          placeholder="Type Something..."
         />
-        <button class="btn btn--accent btn--search">Search</button>
-      </div>
+        <button class="btn btn--accent btn--search" type="submit">
+          Search
+        </button>
+      </form>
       <ul class="list block-domain__prices">
         <li>20% Off</li>
         <li>20% Off</li>
@@ -96,7 +105,7 @@
         <li>20% Off</li>
       </ul>
     </section>
-    <section class="block block-plans container">
+    <section class="block block-plans container" data-aos="fade-up">
       <div class="grid grid--1x3">
         <div class="project">
           <div class="card card--primary">
@@ -113,7 +122,7 @@
                 <li class="list__item">Item 2</li>
                 <li class="list__item">Item 3</li>
               </ul>
-              <button class="btn btn--outline btn--block">Buy Now</button>
+              <button class="btn btn--outline btn--block">Learn More</button>
             </div>
           </div>
         </div>
@@ -132,7 +141,7 @@
                 <li class="list__item">Item 2</li>
                 <li class="list__item">Item 3</li>
               </ul>
-              <button class="btn btn--outline btn--block">Buy Now</button>
+              <button class="btn btn--outline btn--block">Learn More</button>
             </div>
           </div>
         </div>
@@ -151,7 +160,7 @@
                 <li class="list__item">Item 2</li>
                 <li class="list__item">Item 3</li>
               </ul>
-              <button class="btn btn--outline btn--block">Buy Now</button>
+              <button class="btn btn--outline btn--block">Learn More</button>
             </div>
           </div>
         </div>
@@ -318,10 +327,7 @@
         <div class="block-showcase__medias"></div>
       </div>
     </section>
-    <section
-      class="card card--secondary container testimonial"
-      data-aos="zoom-in"
-    >
+    <section class="card card--secondary testimonial" data-aos="zoom-in">
       <div class="card__body">
         <div class="grid grid--1x2">
           <div class="clear testimonial__image">
@@ -444,6 +450,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="Javascript/action-menu.js"></script>
     <script src="Javascript/collapsible.js"></script>
+    <script src="Javascript/site.js"></script>
     <script>
       AOS.init();
     </script>
