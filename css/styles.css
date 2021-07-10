@@ -1151,6 +1151,13 @@ a {
   clear: both;
 }
 
+.article__portrait {
+  display: block;
+  max-width: 100%;
+  max-height: 70vh;
+  margin: 6rem auto;
+}
+
 @media screen and (min-width: 768px) {
   .article__figure {
     float: left;
