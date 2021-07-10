@@ -4,24 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn more about Andrew Francis. See his resume, projects, and how to connect." />
+    <meta name="og:title" content="Andrew Francis" />
+    <meta name="og:description" content="Experience, Projects, and More!" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://atfranc2.github.io/andrew-francis-website/home" />
     <title>Home</title>
     <link rel="icon" href="images/AF.png"/>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/27cae58d94.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
@@ -48,14 +49,14 @@
     </header>
     <section class="hero block block--primary block--skewed-left">
       <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="fade-right">
           <h1 class="block__heading">Andrew Francis</h1>
           <hr />
           <span class="hero__skill">Developer &#8226;</span>
           <span class="hero__skill">Engineer &#8226;</span>
           <span class="hero__skill">Scientist</span>
         </header>
-        <picture class="hero__image">
+        <picture class="hero__image" data-aos="fade-left">
           <source type="image/webp" srcset="images/proff_headshot.webp" />
           <source type="image/png" srcset="images/proff_head_shot.png" />
           <img src="images/proff_headshot.webp" alt="" />
@@ -159,7 +160,7 @@
           about me.
         </p>
       </header>
-      <article class="grid grid--1x2 feature">
+      <article class="grid grid--1x2 feature" data-aos="fade-right">
         <div class="feature__content">
           <span class="icon-container icon-container--primary">
             <svg class="icon">
@@ -181,7 +182,7 @@
           <img class="feature__image" src="images/website-plan.webp" alt="" />
         </picture>
       </article>
-      <article class="grid grid--1x2 feature">
+      <article class="grid grid--1x2 feature" data-aos="fade-left">
         <div class="feature__content">
           <div class="feature__icon">
             <span class="icon-container icon-container--primary">
@@ -211,7 +212,7 @@
           <img class="feature__image" src="images/Linkedin.webp" alt="" />
         </picture>
       </article>
-      <article class="grid grid--1x2 feature">
+      <article class="grid grid--1x2 feature" data-aos="fade-right">
         <div class="feature__content">
           <div class="feature__icon">
             <span class="icon-container icon-container--primary">
@@ -242,12 +243,12 @@
         </picture>
       </article>
     </section>
-    <section class="block block--dark block--skewed-left block-showcase">
+    <section class="block block--dark block--skewed-left block-showcase" >
       <header class="block__header block-showcase__heading">
         <h2 class="block__heading">Look at this really cool project!</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
+        <picture class="block-showcase__image" data-aos="fade-right">
           <source
             type="image/webp"
             srcset="images/data_has_a_better_idea.webp"
@@ -258,7 +259,7 @@
           />
           <img src="images/data_has_a_better_idea.webp" alt="" />
         </picture>
-        <ul class="list">
+        <ul class="list" data-aos="fade-up">
           <li>
             <div class="media">
               <div class="media__image">
@@ -314,7 +315,7 @@
         <div class="block-showcase__medias"></div>
       </div>
     </section>
-    <section class="card card--secondary container testimonial">
+    <section class="card card--secondary container testimonial" data-aos="zoom-in">
       <div class="card__body ">
         <div class="grid grid--1x2">
           <div class="clear testimonial__image">            
@@ -423,7 +424,16 @@
         </section>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Javascript/action-menu.js"></script>
+    <script src="Javascript/collapsible.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-  <script src="Javascript/action-menu.js"></script>
-  <script src="Javascript/collapsible.js"></script>
 </html>
