@@ -983,6 +983,16 @@ a {
 
 .block-showcase {
   margin: 4rem 0;
+  position: relative;
+  top: 5%;
+}
+
+.block-showcase--skewed-left-compliment {
+  margin: 0 0;
+  position: relative;
+  top: -10rem;
+  z-index: -1;
+  padding-top: 13rem;
 }
 
 .block-showcase__heading {
@@ -1188,10 +1198,13 @@ a {
 
 .search-summary {
   min-height: 74vh;
+  padding: 3rem;
 }
 
 .search-summary__heading {
   text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
 }
 
 .search-summary__search-value {

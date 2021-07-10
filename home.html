@@ -69,7 +69,84 @@
         </picture>
       </div>
     </section>
-    <section class="block block-domain container">
+    <section
+      class="
+        block block--dark block-showcase block--skewed-left
+        block-showcase--skewed-left-compliment
+      "
+      data-aos="fade-down"
+    >
+      <header class="block__header block-showcase__heading">
+        <h2 class="block__heading">Welcome To My Website!</h2>
+        <p class="block__text">I am really excited to have you here</p>
+      </header>
+      <div class="container grid grid--1x2">
+        <picture class="block-showcase__image">
+          <source
+            type="image/webp"
+            srcset="images/data_has_a_better_idea.webp"
+          />
+          <source type="image/png" srcset="images/data_has_a_better_idea.png" />
+          <img src="images/data_has_a_better_idea.webp" alt="" />
+        </picture>
+        <ul class="list">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--secondary">
+                  <use xlink:href="images/media-sprite.svg#snap"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Custom Design</h3>
+                <p class="media_description">
+                  This is a responsive website suitable for desktop, tablet, and
+                  mobile deveics. I designed and built this website from scratch
+                  using CSS and Javascript.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--secondary">
+                  <use xlink:href="images/media-sprite.svg#snap"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Platform for Future Projects</h3>
+                <p class="media_description">
+                  The purpose of this webiste is to provide a platform for
+                  future projects. I do projects all the time to learn new front
+                  and back end development skills. Check back later for more
+                  content!
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--secondary">
+                  <use xlink:href="images/media-sprite.svg#snap"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Connect With Me</h3>
+                <p class="media_description">
+                  If you like what you see please reach out to me on LinkedIn
+                  (Link Below). I would be happy to provide development services
+                  or talk to you about my work.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="block-showcase__medias"></div>
+      </div>
+    </section>
+    <section class="block block-domain container" data-aos="zoom-in">
       <header class="block__header">
         <h2 class="block__heading">
           The best developer for the best price starts here
@@ -91,6 +168,7 @@
           type="text"
           name="SiteSearchValue"
           placeholder="Type Something..."
+          required
         />
         <button class="btn btn--accent btn--search" type="submit">
           Search
@@ -104,67 +182,6 @@
         <li>20% Off</li>
         <li>20% Off</li>
       </ul>
-    </section>
-    <section class="block block-plans container" data-aos="fade-up">
-      <div class="grid grid--1x3">
-        <div class="project">
-          <div class="card card--primary">
-            <header class="card__header">
-              <h3 class="project__name">Project Name</h3>
-              <span class="project__cost">$14,000</span>
-              <span class="project__timeframe">/month</span>
-              <span class="badge badge--secondary">20% Done</span>
-              <p class="project__footer">It was a fun project</p>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Item 1</li>
-                <li class="list__item">Item 2</li>
-                <li class="list__item">Item 3</li>
-              </ul>
-              <button class="btn btn--outline btn--block">Learn More</button>
-            </div>
-          </div>
-        </div>
-        <div class="project project--popular">
-          <div class="card card--secondary">
-            <header class="card__header">
-              <h3 class="project__name">Project Name</h3>
-              <span class="project__cost">$14,000</span>
-              <span class="project__timeframe">/month</span>
-              <span class="badge badge--secondary">20% Done</span>
-              <p class="project__footer">It was a fun project</p>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Item 1</li>
-                <li class="list__item">Item 2</li>
-                <li class="list__item">Item 3</li>
-              </ul>
-              <button class="btn btn--outline btn--block">Learn More</button>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <div class="card card--primary">
-            <header class="card__header">
-              <h3 class="project__name">Project Name</h3>
-              <span class="project__cost">$14,000</span>
-              <span class="project__timeframe">/month</span>
-              <span class="badge badge--secondary">20% Done</span>
-              <p class="project__footer">It was a fun project</p>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Item 1</li>
-                <li class="list__item">Item 2</li>
-                <li class="list__item">Item 3</li>
-              </ul>
-              <button class="btn btn--outline btn--block">Learn More</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <section class="block container">
       <header class="block__header">
@@ -258,73 +275,65 @@
         </picture>
       </article>
     </section>
-    <section class="block block--dark block--skewed-left block-showcase">
-      <header class="block__header block-showcase__heading">
-        <h2 class="block__heading">Look at this really cool project!</h2>
-      </header>
-      <div class="container grid grid--1x2">
-        <picture class="block-showcase__image" data-aos="fade-right">
-          <source
-            type="image/webp"
-            srcset="images/data_has_a_better_idea.webp"
-          />
-          <source type="image/png" srcset="images/data_has_a_better_idea.png" />
-          <img src="images/data_has_a_better_idea.webp" alt="" />
-        </picture>
-        <ul class="list" data-aos="fade-up">
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--secondary">
-                  <use xlink:href="images/media-sprite.svg#snap"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Easy Start & Updates</h3>
-                <p class="media_description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam ipsum tempora culpa esse? Repellat, ab iusto. Hic dicta
-                  aspernatur iure.
-                </p>
-              </div>
+    <section class="block block-plans container" data-aos="fade-up">
+      <div class="grid grid--1x3">
+        <div class="project">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="project__name">Project Name</h3>
+              <span class="project__cost">$14,000</span>
+              <span class="project__timeframe">/month</span>
+              <span class="badge badge--secondary">20% Done</span>
+              <p class="project__footer">It was a fun project</p>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Learn More</button>
             </div>
-          </li>
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--secondary">
-                  <use xlink:href="images/media-sprite.svg#snap"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Easy Start & Updates</h3>
-                <p class="media_description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam ipsum tempora culpa esse? Repellat, ab iusto. Hic dicta
-                  aspernatur iure.
-                </p>
-              </div>
+          </div>
+        </div>
+        <div class="project project--popular">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="project__name">Project Name</h3>
+              <span class="project__cost">$14,000</span>
+              <span class="project__timeframe">/month</span>
+              <span class="badge badge--secondary">20% Done</span>
+              <p class="project__footer">It was a fun project</p>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Learn More</button>
             </div>
-          </li>
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--secondary">
-                  <use xlink:href="images/media-sprite.svg#snap"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title">Easy Start & Updates</h3>
-                <p class="media_description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam ipsum tempora culpa esse? Repellat, ab iusto. Hic dicta
-                  aspernatur iure.
-                </p>
-              </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="project__name">Project Name</h3>
+              <span class="project__cost">$14,000</span>
+              <span class="project__timeframe">/month</span>
+              <span class="badge badge--secondary">20% Done</span>
+              <p class="project__footer">It was a fun project</p>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Item 1</li>
+                <li class="list__item">Item 2</li>
+                <li class="list__item">Item 3</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Learn More</button>
             </div>
-          </li>
-        </ul>
-        <div class="block-showcase__medias"></div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="card card--secondary testimonial" data-aos="zoom-in">
